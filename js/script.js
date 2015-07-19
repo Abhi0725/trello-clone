@@ -33,6 +33,8 @@ $(document).ready(function(){
 	
 	$('#addCardBtn').click(function(){
 	    $('#newCard').show(800);
+		$('#newCard').find('input').show(800);
+		$('#newCard').find('textarea').show(800);
 		$('#newCard').find('.save-div').show(1200);
 	});
 	
