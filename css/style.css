@@ -67,11 +67,16 @@ margin:20px;
 box-shadow: 5px 5px 10px #aaa;
 border-radius: 0 10% 0 0;
 position:relative;
-overflow:hidden;
 padding-left: 20px;
-padding-top:30px;
+padding-top:20px;
 color:#000;
 font-family: 'Josefin Sans', sans-serif;
+transition: all 0.5s;
+}
+
+.cards:hover{
+box-shadow: 0px 0px;
+border-radius: 0;
 }
 
 .cards p{
@@ -82,8 +87,36 @@ font-size:16px;
 font-weight:bold;
 }
 
+.cards input{
+max-width: 80px;
+display:inline-table;
+height:25px;
+}
+
+.cards textarea{
+display:inline-table;
+max-width:180px;
+vertical-align:middle;
+}
+
+#newCard .cards{
+box-shadow: 0px 0px;
+border-radius: 0;
+}
+
+.save-div{
+display:none;
+position:absolute;
+bottom:-5px;
+right:-5px;
+}
+
+.save-div a{
+font-size:22px;
+}
+
 .fold-effect{
-background-color:#FFFFCC;
+background-color:#FFFFBB;
 position:absolute;
 top:1px;
 right:0px;
